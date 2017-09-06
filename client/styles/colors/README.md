@@ -1,2 +1,2 @@
 # Colors
- This directory contains alternates for `../colors.less`
+ This directory contains alternates for [colors.less](../colors.less)

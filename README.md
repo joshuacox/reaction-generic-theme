@@ -23,4 +23,4 @@ You can also delete the corresponding file.  The only difference between
 these two is black/white, and lighten/darken are inversed in the `dark.less` file.
 
 Now choose a color from the [colors](client/styles/colors) folder, and
-replace colors.less with it, and/or edit it to your heats content.
+replace [colors.less](client/styles/colors.less) with it, and/or edit it to your heats content.
