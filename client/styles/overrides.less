@@ -1,0 +1,71 @@
+
+@foreground: lighten(@primary, 8%);
+@background: darken(@complementary, 8%);
+
+//== Colors
+
+// All colors that should be used in Reaction.
+// We should be using these variables, not bootstraps @brand-{} variables
+
+//
+// Variables
+// --------------------------------------------------
+
+//== Colors
+@reaction-brand: @primary;
+
+// All colors that should be used in Reaction.
+// We should be using these variables, not bootstraps @brand-{} variables
+@rui-default: @foreground;
+@rui-default-hover: @hover;
+@rui-default-active: @active;
+@rui-default-disabled: @disabled;
+@rui-default-bg: @background;
+@rui-default-text: @foreground;
+
+@rui-brand: @reaction-brand;
+@rui-brand-hover: @hover;
+@rui-brand-active: @active;
+@rui-brand-disabled: @reaction-brand;
+@rui-brand-bg: @background;
+@rui-brand-text: @reaction-brand;
+
+@rui-brand-dark: darken(@reaction-brand, 20%);
+@rui-brand-dark-hover: darken(@reaction-brand, 35%);
+@rui-brand-dark-active: darken(@reaction-brand, 30%);
+@rui-brand-dark-disabled: darken(@reaction-brand, 40%);
+@rui-brand-dark-bg: darken(@background, 53%);
+@rui-brand-dark-text: darken(@reaction-brand, 20%);
+
+@rui-info: @info;
+@rui-info-hover: @hover;
+@rui-info-active: @active;
+@rui-info-disabled: @disabled;
+@rui-info-bg: @background;
+@rui-info-text: @info;
+
+@rui-success: @success;
+@rui-success-hover: @hover;
+@rui-success-active: @active;
+@rui-success-disabled: @disabled;
+@rui-success-bg: @background;
+@rui-success-text: @success;
+
+@rui-warning: @warning;
+@rui-warning-hover: @hover;
+@rui-warning-active: @active;
+@rui-warning-disabled: @disabled;
+@rui-warning-bg: @background;
+@rui-warning-text: @warning;
+
+@rui-danger: @danger;
+@rui-danger-hover: @hover;
+@rui-danger-active: @active;
+@rui-danger-disabled: @disabled;
+@rui-danger-bg: @background;
+@rui-danger-text: @danger;
+
+body {
+  color: @foreground;
+  background-color: @background;
+}

@@ -63,29 +63,29 @@
 
 
 // Shades of gray
-@white: @background;
-@black: @foreground;
+@white: #fff;
+@black: #000;
 
-@black02: lighten(@background, 2%);
-@black05: lighten(@background, 5%);
-@black10: lighten(@background, 10%);
-@black15: lighten(@background, 15%);
-@black20: lighten(@background, 20%);
-@black25: lighten(@background, 25%);
-@black30: lighten(@background, 30%);
-@black35: lighten(@background, 35%);
-@black40: lighten(@background, 40%);
-@black45: lighten(@background, 45%);
-@black50: lighten(@background, 50%);
-@black55: lighten(@background, 55%);
-@black60: lighten(@background, 60%);
-@black65: lighten(@background, 65%);
-@black70: lighten(@background, 70%);
-@black75: lighten(@background, 75%);
-@black80: lighten(@background, 80%);
-@black85: lighten(@background, 85%);
-@black90: lighten(@background, 90%);
-@black95: lighten(@background, 95%);
+@black02: darken(#fff, 2%);
+@black05: darken(#fff, 5%);
+@black10: darken(#fff, 10%);
+@black15: darken(#fff, 15%);
+@black20: darken(#fff, 20%);
+@black25: darken(#fff, 25%);
+@black30: darken(#fff, 30%);
+@black35: darken(#fff, 35%);
+@black40: darken(#fff, 40%);
+@black45: darken(#fff, 45%);
+@black50: darken(#fff, 50%);
+@black55: darken(#fff, 55%);
+@black60: darken(#fff, 60%);
+@black65: darken(#fff, 65%);
+@black70: darken(#fff, 70%);
+@black75: darken(#fff, 75%);
+@black80: darken(#fff, 80%);
+@black85: darken(#fff, 85%);
+@black90: darken(#fff, 90%);
+@black95: darken(#fff, 95%);
 
 @whiteAlpha10: rgba(255,255,255, 0.1);
 @whiteAlpha20: rgba(255,255,255, 0.2);
@@ -146,8 +146,8 @@
 
 @controlbar-bg: @white;
 @controlbar-fg: @black;
-@controlbar-seperator: lighten(@controlbar-bg, 10%);
-@controlbar-hover: darken(@controlbar-fg, 20%);
+@controlbar-seperator: darken(@controlbar-bg, 10%);
+@controlbar-hover: lighten(@controlbar-fg, 20%);
 @controlbar-fg-hover: @white;
 
 //== Scaffolding
@@ -155,7 +155,7 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg: @background;;
+@body-bg:               darken(white, 2%);;
 //** Global text color on `<body>`.
 @text-color:            @gray-dark;
 //** Global border-color and border-width.
@@ -166,8 +166,8 @@
 
 //** Global textual link color.
 @link-color:            @brand-primary-dark;
-//** Link hover color set via `lighten()` function.
-@link-hover-color:      lighten(@link-color, 15%);
+//** Link hover color set via `darken()` function.
+@link-hover-color:      darken(@link-color, 15%);
 //** Link hover decoration.
 @link-hover-decoration: underline;
 
@@ -418,7 +418,7 @@
 @btn-icon-color: @gray-darker;
 @btn-icon-bg: @black20;
 
-@btn-active-color: lighten(@brand-accent-color, 50%);
+@btn-active-color: darken(@brand-accent-color, 50%);
 @btn-active-bg: @brand-accent-color;
 
 
@@ -495,7 +495,7 @@
 //** Dropdown link text color.
 @dropdown-link-color:            @gray-dark;
 //** Hover color for dropdown links.
-@dropdown-link-hover-color:      lighten(@gray-dark, 5%);
+@dropdown-link-hover-color:      darken(@gray-dark, 5%);
 //** Hover background for dropdown links.
 @dropdown-link-hover-bg:         @rui-gray-lightest;
 
@@ -619,39 +619,39 @@
 
 @navbar-default-color:             @white;
 @navbar-default-bg:                @white;
-@navbar-default-border:            lighten(@navbar-default-bg, 6.5%);
+@navbar-default-border:            darken(@navbar-default-bg, 6.5%);
 
 // Navbar links
 @navbar-default-link-color:                @black;
 @navbar-default-link-hover-color:          @rui-gray-dark;
 @navbar-default-link-hover-bg:             transparent;
 @navbar-default-link-active-color:         @rui-gray;
-@navbar-default-link-active-bg:            lighten(@navbar-default-bg, 6.5%);
+@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
 @navbar-default-link-disabled-color:       @black20;
 @navbar-default-link-disabled-bg:          transparent;
 
 // Navbar brand label
 @navbar-default-brand-color:               @navbar-default-link-color;
-@navbar-default-brand-hover-color:         lighten(@navbar-default-brand-color, 10%);
+@navbar-default-brand-hover-color:         darken(@navbar-default-brand-color, 10%);
 @navbar-default-brand-hover-bg:            transparent;
 
 // Navbar toggle
-@navbar-default-toggle-hover-bg:           lighten(@navbar-default-bg, 10%);
-@navbar-default-toggle-icon-bar-bg:        lighten(@navbar-default-bg, 10%);
+@navbar-default-toggle-hover-bg:           darken(@navbar-default-bg, 10%);
+@navbar-default-toggle-icon-bar-bg:        darken(@navbar-default-bg, 10%);
 @navbar-default-toggle-border-color:       @black15;
 
 //=== Inverted toolbar
 // Reset inverted toolbar basics
 @navbar-inverse-color:                      @black;
 @navbar-inverse-bg:                         @white;
-@navbar-inverse-border:                     lighten(@navbar-inverse-bg, 10%);
+@navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
 
 // Inverted navbar links
 @navbar-inverse-link-color:                 @black;
 @navbar-inverse-link-hover-color:           @black60;
 @navbar-inverse-link-hover-bg:              transparent;
 @navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
-@navbar-inverse-link-active-bg:             lighten(@navbar-inverse-bg, 10%);
+@navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 10%);
 @navbar-inverse-link-disabled-color:        @black25;
 @navbar-inverse-link-disabled-bg:           transparent;
 
@@ -669,7 +669,7 @@
 // Reset inverted navbar basics
 @toolbar-inverse-color:                      @black;
 @toolbar-inverse-bg:                         @white;
-@toolbar-inverse-border:                     lighten(@toolbar-inverse-bg, 10%);
+@toolbar-inverse-border:                     darken(@toolbar-inverse-bg, 10%);
 @toolbar-border-width:                       1px;
 @toolbar-border-color:                       @border-color;
 
@@ -678,7 +678,7 @@
 @toolbar-inverse-link-hover-color:           @black60;
 @toolbar-inverse-link-hover-bg:              transparent;
 @toolbar-inverse-link-active-color:          @toolbar-inverse-link-hover-color;
-@toolbar-inverse-link-active-bg:             lighten(@toolbar-inverse-bg, 10%);
+@toolbar-inverse-link-active-bg:             darken(@toolbar-inverse-bg, 10%);
 @toolbar-inverse-link-disabled-color:        @black25;
 @toolbar-inverse-link-disabled-bg:           transparent;
 
@@ -776,19 +776,19 @@
 //## Define colors for form feedback states and, by default, alerts.
 @state-success-text:             @rui-success;
 @state-success-bg:               @rui-success-bg;
-@state-success-border:           lighten(spin(@state-success-bg, -10), 5%);
+@state-success-border:           darken(spin(@state-success-bg, -10), 5%);
 
 @state-info-text:                @rui-info;
 @state-info-bg:                  @rui-info-bg;
-@state-info-border:              lighten(spin(@state-info-bg, -10), 7%);
+@state-info-border:              darken(spin(@state-info-bg, -10), 7%);
 
 @state-warning-text:             @rui-warning;
 @state-warning-bg:               @rui-warning-bg;
-@state-warning-border:           lighten(spin(@state-warning-bg, -10), 5%);
+@state-warning-border:           darken(spin(@state-warning-bg, -10), 5%);
 
 @state-danger-text:              @rui-danger;
 @state-danger-bg:                @rui-danger-bg;
-@state-danger-border:            lighten(spin(@state-danger-bg, -10), 5%);
+@state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
 
 
 //== Tooltips
@@ -823,7 +823,7 @@
 @popover-fallback-border-color:       @black20;
 
 //** Popover title background color
-@popover-title-bg:                    lighten(@popover-bg, 3%);
+@popover-title-bg:                    darken(@popover-bg, 3%);
 
 //** Popover arrow width
 @popover-arrow-width:                 10px;
@@ -835,7 +835,7 @@
 //** Popover outer arrow color
 @popover-arrow-outer-color:           fadein(@popover-border-color, 5%);
 //** Popover outer arrow fallback color
-@popover-arrow-outer-fallback-color:  lighten(@popover-fallback-border-color, 20%);
+@popover-arrow-outer-fallback-color:  darken(@popover-fallback-border-color, 20%);
 
 
 //== Labels
@@ -962,7 +962,7 @@
 //** Border color of active list elements
 @list-group-active-border:      @list-group-active-bg;
 //** Text color for content within active list items
-@list-group-active-text-color:  darken(@list-group-active-bg, 40%);
+@list-group-active-text-color:  lighten(@list-group-active-bg, 40%);
 
 //** Text color of disabled list items
 @list-group-disabled-color:      @gray-light;
@@ -1039,7 +1039,7 @@
 //##
 
 @well-bg:                     @rui-gray-lightest;
-@well-border:                 lighten(@well-bg, 7%);
+@well-border:                 darken(@well-bg, 7%);
 
 
 //== Badges
@@ -1253,9 +1253,9 @@
 
 
 //== Dashboard
-@dashboard-widget-bg: contrast(@body-bg,lighten(@body-bg, 10%),darken(@body-bg, 20%));
-@dashboard-sidebar-bg: contrast(@body-bg,lighten(@body-bg, 10%),darken(@body-bg, 20%));
-@dashboard-row-bg: contrast(@dashboard-sidebar-bg,lighten(@dashboard-sidebar-bg, 10%),darken(@dashboard-sidebar-bg, 20%));
+@dashboard-widget-bg: contrast(@body-bg,darken(@body-bg, 10%),lighten(@body-bg, 20%));
+@dashboard-sidebar-bg: contrast(@body-bg,darken(@body-bg, 10%),lighten(@body-bg, 20%));
+@dashboard-row-bg: contrast(@dashboard-sidebar-bg,darken(@dashboard-sidebar-bg, 10%),lighten(@dashboard-sidebar-bg, 20%));
 @dashboard-drawer-height: @cart-drawer-height;
 @dashboard-font-color: @black;
 
