@@ -1,4 +1,4 @@
-# reaction-dark-theme
+# reaction-generic-theme
 Generic Theme for Reaction Commerce
 
 This is a very simple theme for you to get started with Reaction
