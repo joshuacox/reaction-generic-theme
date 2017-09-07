@@ -37,27 +37,30 @@ In this file there is one main color you need to choose:
 @primary: green;
 ```
 
-From there we can derive the complementary, triadic, and two relatives
-(which is in the `overrides.less`:
+From there we can derive the complementary, triadic, and a few
+relatives, and 90 degress left and right:
 
 ```
 //derived
 @complementary: spin(@primary, 180);
 @triadic-secondary: spin(@primary, 120);
 @triadic-tertiary: spin(@primary, 240);
-@right: spin(@primary, 60);
-@left: spin(@primary, 300);
-
+@brother: spin(@primary, 30);
+@sister: spin(@primary, 330);
+@father: spin(@primary, 60);
+@mother: spin(@primary, 300);
+@right: spin(@primary, 90);
+@left: spin(@primary, 270);
 
 // context
-@warning: @triadic-secondary;
-@danger: @triadic-tertiary;
+@warning: @left;
+@danger: @right;
 @disabled: #555;
 
-@info: lighten(@left, 11%);
-@success: lighten(@right, 11%);
-@hover: @right;
-@active: @left;
+@info: @father;
+@success: @mother;
+@hover: @brother;
+@active: @sister;
 ```
 
 That's it, all other colors should be derived from the those above.
