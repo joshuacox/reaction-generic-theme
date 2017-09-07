@@ -5,7 +5,7 @@ all: dark.less
 variables.less:
 	wget -c https://raw.githubusercontent.com/reactioncommerce/reaction/master/imports/plugins/included/default-theme/client/styles/variables.less
 
-dark.less:
+dark.less: variables.less
 	cp variables.less dark.less
 	sed -i 's/#000/black_placeholder/' dark.less
 	sed -i 's/#fff/white_placeholder/' dark.less
