@@ -1,5 +1,5 @@
 // All other colors will be derived from this one
-@primary: olive;
+@primary: green;
 //derived
 @complementary: spin(@primary, 180);
 @triadic-secondary: spin(@primary, 120);
@@ -9,8 +9,8 @@
 
 
 // context
-@warning: orange;
-@danger: red;
+@warning: @triadic-secondary;
+@danger: @triadic-tertiary;
 @disabled: #555;
 
 @info: lighten(@left, 11%);

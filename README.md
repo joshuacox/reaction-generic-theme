@@ -34,16 +34,7 @@ In this file there is one main color you need to choose:
 
 ```
 // All other colors will be derived from this one
-@primary: sapphire;
-```
-
-and a few context colors:
-
-```
-// context
-@warning: orange;
-@danger: red;
-@disabled: #555;
+@primary: green;
 ```
 
 From there we can derive the complementary, triadic, and two relatives
@@ -56,14 +47,11 @@ From there we can derive the complementary, triadic, and two relatives
 @triadic-tertiary: spin(@primary, 240);
 @right: spin(@primary, 60);
 @left: spin(@primary, 300);
-```
 
-And now most of context is derived too:
 
-```
 // context
-@warning: orange;
-@danger: red;
+@warning: @triadic-secondary;
+@danger: @triadic-tertiary;
 @disabled: #555;
 
 @info: lighten(@left, 11%);
@@ -72,7 +60,7 @@ And now most of context is derived too:
 @active: @left;
 ```
 
-That's it, all other colors should be derived from those above.
+That's it, all other colors should be derived from the those above.
 
 ### Design
 
@@ -94,4 +82,4 @@ and replaced everything there with a derived color from
 Ideally, eventually you will only edit
 [colors.less](client/styles/colors.less)
 for any color changes you might want to make.  But we'll see how that
-works out.
+works out
