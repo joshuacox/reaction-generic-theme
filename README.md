@@ -83,3 +83,24 @@ Ideally, eventually you will only edit
 [colors.less](client/styles/colors.less)
 for any color changes you might want to make.  But we'll see how that
 works out
+
+And I have added a [custom.less](client/styles/custom.less) in which you
+can add any customizations you like.  And to show you how to add it to
+[main.less](client/styles/main.less)
+
+### [color.sh](client/styles/color.sh)
+
+you can use this script to make a new color and add it to the `colors`
+directory like so:
+
+```sh
+./color.sh fuscia
+```
+
+or:
+
+```sh
+./color.sh '#ef2346'
+```
+
+submit PRs with your favorites!
