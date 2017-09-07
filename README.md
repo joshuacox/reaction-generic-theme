@@ -115,4 +115,15 @@ or:
 ./color.sh pink pink
 ```
 
+### [bgcolor.sh](client/styles/bgcolor.sh)
+
+Would you rather choose by background color instead?
+
+```sh
+./bgcolor.sh fuscia "#ff00ff"
+```
+
+
+
+
 submit PRs with your favorites!
