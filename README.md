@@ -51,7 +51,7 @@ and seven context colors
 @active: lightgreen;
 ```
 
-That's it, all other colors should be chosen from those.
+That's it, all other colors should be derived from those above.
 
 ### Design
 
