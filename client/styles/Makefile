@@ -17,51 +17,51 @@ dark.less: variables.less
 	sed -i 's/placeholder_darken/lighten/' dark.less
 
 orange:
-	./color.sh orange
+	./color.sh orange orange
 
 purple:
-	./color.sh purple
+	./color.sh purple purple
 
 green:
-	./color.sh green
+	./color.sh green green
 
 lightgreen:
-	./color.sh lightgreen
+	./color.sh lightgreen lightgreen
 
 darkgreen:
-	./color.sh darkgreen
+	./color.sh darkgreen darkgreen
 
 yellow:
-	./color.sh yellow
+	./color.sh yellow yellow
 
 blue:
-	./color.sh blue
+	./color.sh blue blue
 
 lightblue:
-	./color.sh lightblue
+	./color.sh lightblue lightblue
 
 darkblue:
-	./color.sh darkblue
+	./color.sh darkblue darkblue
 
 red:
-	./color.sh red
+	./color.sh red red
 
 darkred:
-	./color.sh darkred
+	./color.sh darkred darkred
 
 pink:
-	./color.sh pink
+	./color.sh pink pink
 
-black:
-	./color.sh black
+olive:
+	./color.sh olive olive
 
-white:
-	./color.sh white
+lightyellow:
+	./color.sh lightyellow lightyellow
 
 colordir:
 	mkdir -p colors
 
-colors: colordir white orange purple green lightgreen darkgreen yellow blue lightblue darkblue red darkred pink black
+colors: colordir orange purple green lightgreen darkgreen yellow blue lightblue darkblue red darkred pink olive lightyellow
 
 fullcolors:
 	$(eval PWD := $(shell pwd))
@@ -75,6 +75,29 @@ fullcolors:
 	cd $(TMP) \
 	&& mkdir colors \
 	&& cut -f1 -d, colors.csv | xargs -n1 -I{} ./color.sh {} \
+	&& cp -a colors $(PWD)/fullcolors
+	cd $(PWD)
+	rm -Rf $(TMP)
+
+.tmp:
+	mkdir -p .tmp
+
+.tmp/colors.csv: .tmp
+	wget -c https://raw.githubusercontent.com/codebrainz/color-names/master/output/colors.csv -O .tmp/colors.csv
+
+ngfullcolors: .tmp/colors.csv
+	$(eval PWD := $(shell pwd))
+	$(eval TMP := $(shell mktemp -d --suffix=DOCKERTMP))
+	cp color.sh $(TMP)/
+	cp colors.less $(TMP)/
+	cp colors.less.tpl $(TMP)/
+	cp .tmp/colors.csv $(TMP)/
+	cd $(TMP) \
+	&& mkdir colors \
+	&& cut -s -f3,1 -d, --output-delimiter=' ' colors.csv \
+	| sed 's/^/.\/color.sh\ /' \
+	| sed 's/#\(.*\)/"#\1"/' \
+	| bash \
 	&& cp -a colors $(PWD)/fullcolors
 	cd $(PWD)
 	rm -Rf $(TMP)
