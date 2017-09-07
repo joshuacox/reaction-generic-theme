@@ -7,7 +7,6 @@ variables.less:
 
 light.less:
 	cp variables.less light.less
-	sed -i 's/@body-bg:               lighten(white, 2%);;/@body-bg: @background;;/' light.less
 
 dark.less:
 	cp variables.less dark.less
@@ -19,4 +18,3 @@ dark.less:
 	sed -i 's/black_placeholder/@foreground/' dark.less
 	sed -i 's/placeholder_lighten/darken/' dark.less
 	sed -i 's/placeholder_darken/lighten/' dark.less
-	sed -i 's/@body-bg:               lighten(white, 2%);;/@body-bg: @background;;/' dark.less
