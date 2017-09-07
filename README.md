@@ -80,13 +80,26 @@ and replaced everything there with a derived color from
 [colors.less](client/styles/colors.less)
 
 Ideally, eventually you will only edit
-[colors.less](client/styles/colors.less)
 for any color changes you might want to make.  But we'll see how that
 works out
 
 And I have added a [custom.less](client/styles/custom.less) in which you
 can add any customizations you like.  And to show you how to add it to
 [main.less](client/styles/main.less)
+
+### [colors](client/styles/colors)
+
+This directory contains alternates for
+[colors.less](client/styles/colors.less)
+
+### fullcolors
+
+This directory can be generated with the
+[Makefile](client/styles/Makefile)
+`make fullcolors` and like
+[colors](client/styles/colors)
+it contains many alternates for
+[colors.less](client/styles/colors.less)
 
 ### [color.sh](client/styles/color.sh)
 
