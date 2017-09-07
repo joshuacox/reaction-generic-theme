@@ -34,10 +34,20 @@ In this file there is one main color you need to choose:
 
 ```
 // All other colors will be derived from this one
-@primary: orange;
+@primary: sapphire;
 ```
 
-From there we can derive the complementary, triadic, and two relatives:
+and a few context colors:
+
+```
+// context
+@warning: orange;
+@danger: red;
+@disabled: #555;
+```
+
+From there we can derive the complementary, triadic, and two relatives
+(which is in the `overrides.less`:
 
 ```
 //derived

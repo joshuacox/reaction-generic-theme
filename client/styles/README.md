@@ -26,5 +26,6 @@ This file is left here to let you know how I created
 `dark.less`.  If `variables.less` changes in the future it gives me a
 headstart on doing it over again.
 
+### experimental (mmany of these do not work YMMV)
 `make fullcolors`  <-- will make directory called `fullcolors` that is
 generated from all the html color names
