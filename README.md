@@ -67,11 +67,7 @@ That's it, all other colors should be derived from the those above.
 
 ### Design
 
-I, for one, loathe sifting through css files trying to find some obscure
-choice that some themer made when choosing between yet another shade of
-grey.
-
-Anyhow, I have a very minimalist approach of just copying in
+I have a very minimalist approach of just copying in
 [variables.less](https://github.com/reactioncommerce/reaction/blob/master/imports/plugins/included/default-theme/client/styles/variables.less)
 from the default-theme in reaction iteslf, and swapping out the
 `@body-bg` definition, and if a dark theme I also do the inversions.
