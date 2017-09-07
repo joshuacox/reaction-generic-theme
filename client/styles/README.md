@@ -8,20 +8,20 @@ the main color file
 
 ### overrides.less
 
-stuff I have changed by hand from the original variables.less
+stuff I have changed by hand from the original `variables.less`
 
-### dark.less and light.less
+### dark.less
 
-files derived from the original variables.less using completely
-automated methods.  Blow them away and `make all`, should recreate them
+file derived from the original `variables.less` using completely
+automated methods.  Blow it away and `make dark.less`, should recreate it
 again without changes.
 
 ### colors
 
-This directory contains alternates for color.less
+This directory contains alternates for `color.less`
 
 ### Makefile
 
-This file is left here to let you know how I created `light.less` and
+This file is left here to let you know how I created
 `dark.less`.  If `variables.less` changes in the future it gives me a
 headstart on doing it over again.
