@@ -1,7 +1,7 @@
 // All other colors will be derived from this one
 @complementary: $REPLACE_ME_COLOR;
 //derived
-@primary: spin(@primary, 180);
+@primary: spin(@complementary, 180);
 @triadic-secondary: spin(@primary, 120);
 @triadic-tertiary: spin(@primary, 240);
 @brother: spin(@primary, 30);
