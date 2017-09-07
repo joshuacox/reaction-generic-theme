@@ -61,7 +61,12 @@ lightyellow:
 colordir:
 	mkdir -p colors
 
+bgcolordir:
+	mkdir -p bgcolors
+
 colors: colordir orange purple green lightgreen darkgreen yellow blue lightblue darkblue red darkred pink olive lightyellow
+
+bgcolors: bgcolordir orangebg purplebg greenbg lightgreenbg darkgreenbg yellowbg bluebg lightbluebg darkbluebg redbg darkredbg pinkbg olivebg lightyellowbg
 
 fullcolors:
 	$(eval PWD := $(shell pwd))
@@ -101,3 +106,46 @@ ngfullcolors: .tmp/colors.csv
 	&& cp -a colors $(PWD)/fullcolors
 	cd $(PWD)
 	rm -Rf $(TMP)
+
+orangebg:
+	./bgcolor.sh orange orange
+
+purplebg:
+	./bgcolor.sh purple purple
+
+greenbg:
+	./bgcolor.sh green green
+
+lightgreenbg:
+	./bgcolor.sh lightgreen lightgreen
+
+darkgreenbg:
+	./bgcolor.sh darkgreen darkgreen
+
+yellowbg:
+	./bgcolor.sh yellow yellow
+
+bluebg:
+	./bgcolor.sh blue blue
+
+lightbluebg:
+	./bgcolor.sh lightblue lightblue
+
+darkbluebg:
+	./bgcolor.sh darkblue darkblue
+
+redbg:
+	./bgcolor.sh red red
+
+darkredbg:
+	./bgcolor.sh darkred darkred
+
+pinkbg:
+	./bgcolor.sh pink pink
+
+olivebg:
+	./bgcolor.sh olive olive
+
+lightyellowbg:
+	./bgcolor.sh lightyellow lightyellow
+
