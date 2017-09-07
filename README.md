@@ -9,19 +9,17 @@ Commerce.
 To get started fork this and create a new branch for your project.
 
 Then choose whether or not you are using a dark
-background or a light background, by editing these lines from
+background or a light background, by editing this line from
 [main.less](client/styles/main.less)
 
 ```
-//@import "./light.less";
 @import "./dark.less";
 ```
 
-If using a dark theme you leave them alone, if light, comment out the
-dark line (or delete it) and uncomment the light like so:
+If using a dark theme you leave it alone, if light, comment out the
+dark line (or delete it) like so:
 
 ```
-@import "./light.less";
 //@import "./dark.less";
 ```
 

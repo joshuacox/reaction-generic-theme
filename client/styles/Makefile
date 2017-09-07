@@ -1,12 +1,9 @@
 SHELL:=/bin/bash
 
-all: light.less dark.less
+all: dark.less
 
 variables.less:
 	wget -c https://raw.githubusercontent.com/reactioncommerce/reaction/master/imports/plugins/included/default-theme/client/styles/variables.less
-
-light.less:
-	cp variables.less light.less
 
 dark.less:
 	cp variables.less dark.less
