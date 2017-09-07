@@ -103,16 +103,16 @@ it contains many alternates for
 ### [color.sh](client/styles/color.sh)
 
 you can use this script to make a new color and add it to the `colors`
-directory like so:
+directory like so `./color.sh $COLOR_NAME #COLOR`  e.g.
 
 ```sh
-./color.sh fuscia
+./color.sh fuscia "#ff00ff"
 ```
 
 or:
 
 ```sh
-./color.sh '#ef2346'
+./color.sh pink pink
 ```
 
 submit PRs with your favorites!
