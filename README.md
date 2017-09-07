@@ -25,10 +25,10 @@ dark line (or delete it) like so:
 
 You can also delete the corresponding file.  The only difference between this file and the original
 [variables.less](https://github.com/reactioncommerce/reaction/blob/master/imports/plugins/included/default-theme/client/styles/variables.less)
-is that black/white, and lighten/darken are inversed in the `dark.less` file.
+is that black/white, and lighten/darken are inversed in the [dark.less](client/styles/dark.less) file.
 
 Now choose a color from the [colors](client/styles/colors) folder, and
-replace [colors.less](client/styles/colors.less) with it, and/or edit it to your heats content.
+replace [colors.less](client/styles/colors.less) with it, and/or edit it to your hearts content.
 
 In this file there is one main color you need to choose:
 
