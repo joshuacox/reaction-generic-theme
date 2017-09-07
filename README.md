@@ -30,24 +30,36 @@ is that black/white, and lighten/darken are inversed in the `dark.less` file.
 Now choose a color from the [colors](client/styles/colors) folder, and
 replace [colors.less](client/styles/colors.less) with it, and/or edit it to your heats content.
 
-In this file there are three main colors you need to choose:
+In this file there is one main color you need to choose:
 
 ```
-@primary: yellow;
-@complementary: blue;
-@tertiary: green;
+// All other colors will be derived from this one
+@primary: orange;
 ```
 
-and seven context colors
+From there we can derive the complementary, triadic, and two relatives:
 
 ```
-@info: lightblue;
-@success: gold;
+//derived
+@complementary: spin(@primary, 180);
+@triadic-secondary: spin(@primary, 120);
+@triadic-tertiary: spin(@primary, 240);
+@right: spin(@primary, 60);
+@left: spin(@primary, 300);
+```
+
+And now most of context is derived too:
+
+```
+// context
 @warning: orange;
 @danger: red;
 @disabled: #555;
-@hover: purple;
-@active: lightgreen;
+
+@info: lighten(@left, 11%);
+@success: lighten(@right, 11%);
+@hover: @right;
+@active: @left;
 ```
 
 That's it, all other colors should be derived from those above.

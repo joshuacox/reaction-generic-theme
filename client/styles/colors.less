@@ -1,5 +1,7 @@
 // All other colors will be derived from this one
 @primary: orange;
+
+//derived
 @complementary: spin(@primary, 180);
 @triadic-secondary: spin(@primary, 120);
 @triadic-tertiary: spin(@primary, 240);
@@ -7,12 +9,11 @@
 @left: spin(@primary, 300);
 
 // context
-@info: lighten(@left, 11%);
-@success: lighten(@right, 11%);
 @warning: orange;
 @danger: red;
-
 @disabled: #555;
 
+@info: lighten(@left, 11%);
+@success: lighten(@right, 11%);
 @hover: @right;
 @active: @left;
