@@ -1,5 +1,5 @@
 // All other colors will be derived from this one
-@primary: purple;
+@primary: $REPLACE_ME_COLOR;
 
 // context
 @warning: orange;
