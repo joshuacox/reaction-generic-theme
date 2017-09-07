@@ -1,7 +1,7 @@
 import { Reaction } from "/server/api";
 
 Reaction.registerPackage({
-  label: "Reaction Dark Theme",
+  label: "Reaction Generic Theme",
 
-  name: "reaction-dark-theme"
+  name: "reaction-generic-theme"
 });
