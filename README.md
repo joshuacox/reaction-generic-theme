@@ -67,10 +67,9 @@ That's it, all other colors should be derived from the those above.
 
 ### Design
 
-I have a very minimalist approach of just copying in
+I have a very minimalist approach of, if a dark theme just copy in
 [variables.less](https://github.com/reactioncommerce/reaction/blob/master/imports/plugins/included/default-theme/client/styles/variables.less)
-from the default-theme in reaction iteslf, and swapping out the
-`@body-bg` definition, and if a dark theme I also do the inversions.
+from the default-theme in reaction iteslf and do the inversions.
 See the [Makefile](client/styles/Makefile) if you want to see the sed
 statements.
 
@@ -79,6 +78,7 @@ and replaced everything there with a derived color from
 [colors.less](client/styles/colors.less)
 
 Ideally, eventually you will only edit
+[colors.less](client/styles/colors.less)
 for any color changes you might want to make.  But we'll see how that
 works out
 
