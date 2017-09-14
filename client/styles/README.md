@@ -2,9 +2,11 @@
 
 This is the central less file I am organizing everything in.
 
-### colors.less
+### [colors.less](./colors.less)
 
 the main color file
+
+Change this [line](https://github.com/joshuacox/reaction-generic-theme/blob/master/client/styles/colors.less#L2) to set the color of the font, all other colors are derived from this one.
 
 ### overrides.less
 
